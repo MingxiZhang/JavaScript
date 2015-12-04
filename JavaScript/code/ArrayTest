@@ -1,0 +1,15 @@
+'use strict';
+var arr = ['小明', '小红', '大军', '阿黄'];
+var printString="欢迎";
+for (var i = 0; i < arr.length; i++) {
+    if(i<(arr.length-2)){
+          printString += arr[i] + ",";
+    }
+    if(i==(arr.length-2)){
+          printString += arr[i] + "和";
+    }
+    if(i==(arr.length-1)){
+          printString += arr[i] + "同学！";
+    }
+}
+alert(printString);

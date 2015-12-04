@@ -1,0 +1,18 @@
+'use strict';
+
+var height = parseFloat(prompt('请输入身高(m):'));
+var weight = parseFloat(prompt('请输入体重(kg):'));
+
+var bmi = weight/height;
+
+if (bmi<18.5){
+  alert("Your weight is too low!");
+} else if (bmi>=18.5 && bmi<25){
+  alert("Your weight is normal!");
+} else if (bmi>=25 && bmi<28) {
+  alert("You are overweight!");
+} else if (bmi>=28 && bmi<32){
+  alert("You are fat");
+} else if (bmi>=32){
+  alert("You are very fat!");
+}
